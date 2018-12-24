@@ -1,0 +1,667 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 6.0.3.2 (Linux)"/>
+	<meta name="created" content="2018-12-23T09:45:18.837067900"/>
+	<meta name="changed" content="2018-12-23T16:26:10.905669890"/>
+	<style type="text/css">
+		@page { margin: 2cm }
+		p { margin-bottom: 0.25cm; direction: ltr; color: #000000; line-height: 115%; orphans: 2; widows: 2 }
+		p.western { font-family: "Liberation Serif", "Times New Roman", serif; font-size: 12pt; so-language: pt-BR }
+		p.cjk { font-family: "Noto Sans CJK SC Regular"; font-size: 12pt; so-language: zh-CN }
+		p.ctl { font-family: "Lohit Devanagari"; font-size: 12pt; so-language: hi-IN }
+		h2 { direction: ltr; color: #000000; orphans: 2; widows: 2 }
+		h2.western { font-family: "Liberation Sans", "Arial", sans-serif; font-size: 16pt; so-language: pt-BR }
+		h2.cjk { font-family: "Noto Sans CJK SC Regular"; font-size: 16pt; so-language: zh-CN }
+		h2.ctl { font-family: "Lohit Devanagari"; font-size: 16pt; so-language: hi-IN }
+		code.western { font-family: "Liberation Mono", "Courier New", monospace }
+		code.cjk { font-family: "DejaVu Sans Mono", monospace }
+		code.ctl { font-family: "Liberation Mono", "Courier New", monospace }
+		a:link { so-language: zxx }
+	</style>
+</head>
+<body lang="pt-BR" text="#000000" dir="ltr">
+<p class="western"><code class="western">Questão 2 -</code></p>
+<h2 class="western">1<span style="background: transparent"> Support
+Vector Machines (SVM) </span>
+</h2>
+<ol>
+	<ol>
+		<li/>
+<p class="western" style="margin-bottom: 0cm"><b><span style="background: transparent">Descreva
+		uma situação do mundo real onde este modelo pode ser utilizado. </span></b>
+		</p>
+		<ol>
+			<li/>
+<p class="western" style="margin-bottom: 0cm"><span style="background: transparent"><span style="font-weight: normal">Verificar
+			e-mails e rotulá-los como urgentes ou não. Classificar se uma
+			empresa é solvente ou não. Análise de ações da bolsa de
+			valores.</span></span></p>
+		</ol>
+		<li/>
+<p class="western" style="margin-bottom: 0cm"><b><span style="background: transparent">Quais
+		são as vantagens da utilização deste modelo; quando ele performa
+		bem? </span></b>
+		</p>
+		<ol>
+			<li/>
+<p class="western" style="margin-bottom: 0cm; font-weight: normal">
+			<span style="background: transparent">Oferece ótima acurácia nos
+			dados de treinamento</span></p>
+			<li/>
+<p class="western" style="margin-bottom: 0cm; font-weight: normal">
+			<span style="background: transparent">Mais eficiente na
+			classificação de dados futuros</span></p>
+			<li/>
+<p class="western" style="margin-bottom: 0cm; font-weight: normal">
+			<span style="background: transparent">Não faz suposições forte
+			sobre os dados.</span></p>
+			<li/>
+<p class="western" style="margin-bottom: 0cm; font-weight: normal">
+			<span style="background: transparent">Eles também são bastante
+			robustos contra overfitting, especialmente em espaços de alta
+			dimensão.</span></p>
+		</ol>
+		<li/>
+<p class="western" style="margin-bottom: 0cm"><b><span style="background: transparent">Quais
+		são as fraquezas do modelo; quando ele performa mal? </span></b>
+		</p>
+		<ol>
+			<li/>
+<p class="western" style="margin-bottom: 0cm"><span style="background: transparent"><span style="font-weight: normal">No
+			entanto, os SVMs consomem mais recursos computacionais;</span></span></p>
+			<li/>
+<p class="western" style="margin-bottom: 0cm"><span style="background: transparent"><span style="font-weight: normal">São
+			mais difíceis de ajustar devido à importância de escolher o
+			kernel correto</span></span></p>
+			<li/>
+<p class="western" style="margin-bottom: 0cm"><span style="background: transparent"><span style="font-weight: normal">Não
+			escalam bem em conjuntos de dados maiores. </span></span>
+			</p>
+		</ol>
+		<li/>
+<p class="western" style="margin-bottom: 0cm"><b><span style="background: transparent">O
+		que torna este modelo um bom candidato para o problema,
+		considerando o que você sabe sobre o conjunto de dados? </span></b>
+		</p>
+		<ol>
+			<li/>
+<p class="western" style="margin-bottom: 0cm; font-weight: normal">
+			<span style="background: transparent">Como queremos classificar os
+			dados de uma forma binária (&gt;50 mil ou não) podemos usar o
+			SVM para tal, seria como se comportasse como uma regressão
+			logistica) e não temos um grande voluma de dados. Contudo, a
+			vantagem aqui é que pode se ter uma distribuição de pontos
+			maior que 2D.</span></p>
+		</ol>
+		<li/>
+<p class="western" style="margin-bottom: 0cm"><b><span style="background: transparent">Referência</span></b></p>
+		<ol>
+			<li/>
+<p class="western" style="margin-bottom: 0cm"><span style="font-weight: normal"><span style="background: transparent">SVMs
+			- An overview of Support Vector Machines -
+			</span></span><font color="#000080"><span lang="zxx"><u><a href="https://www.svm-tutorial.com/2017/02/svms-overview-support-vector-machines/"><span style="font-weight: normal"><span style="background: transparent">https://www.svm-tutorial.com/2017/02/svms-overview-support-vector-machines/</span></span></a></u></span></font></p>
+			<li/>
+<p class="western" style="margin-bottom: 0cm; font-weight: normal">
+			<span style="background: transparent">Support Vector Machines
+			(SVM) as a Technique for Solvency Analysis  -
+			https://core.ac.uk/download/pdf/6302770.pdf</span></p>
+		</ol>
+	</ol>
+</ol>
+<p class="western" style="margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="margin-bottom: 0cm"><br/>
+
+</p>
+<h2 class="western">2<b> </b>Logistic Regression </span>
+</h2>
+<ol>
+	<ol>
+		<li/>
+<p class="western" style="margin-bottom: 0cm"><b><span style="background: transparent">Descreva
+		uma situação do mundo real onde este modelo pode ser utilizado. </span></b>
+		</p>
+		<ol>
+			<li/>
+<p class="western" style="margin-bottom: 0cm"><span style="background: transparent"><span style="font-weight: normal">Usado
+			para aplicar uma classificação binária. Indicar se um e-mail é
+			spam ou não. Se uma paciente tem uma determinada doença ou não.</span></span></p>
+		</ol>
+		<li/>
+<p class="western" style="margin-bottom: 0cm"><b><span style="background: transparent">Quais
+		são as vantagens da utilização deste modelo; quando ele performa
+		bem? </span></b>
+		</p>
+		<ol>
+			<li/>
+<p class="western" style="margin-bottom: 0cm; font-weight: normal">
+			<span style="background: transparent">É muito eficiente quando há
+			um região que pode ser bem divida por uma reta; </span>
+			</p>
+			<li/>
+<p class="western" style="margin-bottom: 0cm; font-weight: normal">
+			<span style="background: transparent">Não requer muitos recursos
+			computacionais; </span>
+			</p>
+			<li/>
+<p class="western" style="margin-bottom: 0cm; font-weight: normal">
+			<span style="background: transparent">Saída bem calibradas com as
+			probabilidades preditas.</span></p>
+		</ol>
+		<li/>
+<p class="western" style="margin-bottom: 0cm"><b><span style="background: transparent">Quais
+		são as fraquezas do modelo; quando ele performa mal? </span></b>
+		</p>
+		<ol>
+			<li/>
+<p class="western" style="margin-bottom: 0cm; font-weight: normal">
+			<span style="background: transparent">Não conseguir resolver
+			problemas não lineares, desde que sua superfície de decisão é
+			linear. Ou seja, se não há uma área clara que possa ser divida
+			por uma reta na distribuição dos pontos, o algoritmo não deve
+			ser aplicado.</span></p>
+			<li/>
+<p class="western" style="margin-bottom: 0cm"><span style="background: transparent">Não
+			é um dos mais poderosos algoritmos e pode ser superado por
+			algoritmos mais complexos.</span></p>
+			<li/>
+<p class="western" style="margin-bottom: 0cm"><span style="background: transparent">Alta
+			dependência da representação adequada de seus dados. Isso
+			significa que a regressão logística não é uma ferramenta útil,
+			a menos que você já tenha identificado todas as variáveis
+			independentes importantes. </span>
+			</p>
+			<li/>
+<p class="western" style="margin-bottom: 0cm"><span style="background: transparent"><span style="font-weight: normal">É
+			também um algoritmo conhecido por sua vulnerabilidade ao
+			overfitting.</span></span></p>
+		</ol>
+		<li/>
+<p class="western" style="margin-bottom: 0cm"><b><span style="background: transparent">O
+		que torna este modelo um bom candidato para o problema,
+		considerando o que você sabe sobre o conjunto de dados? </span></b>
+		</p>
+		<ol>
+			<li/>
+<p class="western" style="margin-bottom: 0cm"><span style="background: transparent"><span style="font-weight: normal">Usado
+			para aplicar uma classificação discreta. Então como é esse o
+			objetivo de nosso problema este método se aplica bem, pois
+			queremos dizer se alguém ganhar acima de 50 mil (1) ou não (0).</span></span></p>
+		</ol>
+		<li/>
+<p class="western" style="margin-bottom: 0cm"><b><span style="background: transparent">Referências</span></b></p>
+		<ol>
+			<li/>
+<p class="western" style="margin-bottom: 0cm"><span style="font-weight: normal"><span style="background: transparent">The
+			Logistic Regression Algorithm -
+			</span></span><font color="#000080"><span lang="zxx"><u><a href="https://machinelearning-blog.com/2018/04/23/logistic-regression-101/"><span style="font-weight: normal"><span style="background: transparent">https://machinelearning-blog.com/2018/04/23/logistic-regression-101/</span></span></a></u></span></font></p>
+			<li/>
+<p class="western" style="margin-bottom: 0cm; font-weight: normal">
+			<span style="background: #fff200"><span style="background: transparent">Modern
+			Machine Learning Algorithms: Strengths and Weaknesses -
+			<a href="https://elitedatascience.com/machine-learning-algorithms">https://elitedatascience.com/machine-learning-algorithms</a></span></span></p>
+		</ol>
+	</ol>
+</ol>
+<h2 class="western">3<b><span style="background: transparent">
+</span></b>K-Nearest Neighbors (KNeighbors) 
+</h2>
+<ol>
+	<ol start="6">
+		<li/>
+<p class="western" style="margin-bottom: 0cm"><b><span style="background: transparent">Descreva
+		uma situação do mundo real onde este modelo pode ser utilizado. </span></b>
+		</p>
+		<ol>
+			<li/>
+<p class="western" style="margin-bottom: 0cm"><span style="background: transparent"><span style="font-weight: normal">Como
+			funciona através da classificação de um elemento pela
+			proximidade de suas características em relação a dos outros
+			elementos, poderia citar como elemento a classificação de
+			espécies de pássaros. Onde posicionar seu empreendimento, data a
+			distância dos clientes.</span></span></p>
+		</ol>
+		<li/>
+<p class="western" style="margin-bottom: 0cm"><b><span style="background: transparent">Quais
+		são as vantagens da utilização deste modelo; quando ele performa
+		bem? </span></b>
+		</p>
+		<ol>
+			<li/>
+<p class="western" style="margin-bottom: 0cm; font-weight: normal">
+			<span style="background: transparent">O algoritmo é simples e
+			fácil de implementar.</span></p>
+			<li/>
+<p class="western" style="margin-bottom: 0cm; font-weight: normal">
+			<span style="background: transparent">Não há necessidade de
+			construir um modelo, ajustar vários parâmetros ou fazer
+			suposições adicionais</span></p>
+			<li/>
+<p class="western" style="margin-bottom: 0cm; font-weight: normal">
+			<span style="background: transparent">O algoritmo é versátil.
+			Pode ser usado para classificação ou regressão</span></p>
+			<li/>
+<p class="western" style="margin-bottom: 0cm"><span style="background: transparent">Alta
+			acurácia para modelos simples.</span></p>
+		</ol>
+		<li/>
+<p class="western" style="margin-bottom: 0cm"><b><span style="background: transparent">Quais
+		são as fraquezas do modelo; quando ele performa mal? </span></b>
+		</p>
+		<ol>
+			<li/>
+<p class="western" style="margin-bottom: 0cm"><span style="background: transparent"><span style="font-weight: normal">O
+			algoritmo fica significativamente mais lento à medida que o
+			número de exemplos e / ou preditores / variáveis independentes
+			aumenta.</span></span></p>
+			<li/>
+<p class="western" style="margin-bottom: 0cm; font-weight: normal">
+			<span style="background: transparent">Computacionalmente caro</span></p>
+			<li/>
+<p class="western" style="margin-bottom: 0cm; font-weight: normal">
+			<span style="background: transparent">Sensível aos outliers</span></p>
+		</ol>
+		<li/>
+<p class="western" style="margin-bottom: 0cm"><b><span style="background: transparent">O
+		que torna este modelo um bom candidato para o problema,
+		considerando o que você sabe sobre o conjunto de dados? </span></b>
+		</p>
+		<ol>
+			<li/>
+<p class="western" style="margin-bottom: 0cm"><span style="background: transparent"><span style="font-weight: normal">Pelo
+			fato do modelo funcionar com um ajuste mínimo, ou seja não é
+			preciso fazer suposições sobre os dados, e termos um volume
+			pequeno, acredito que seja interessante usarmos este modelo.</span></span></p>
+		</ol>
+		<li/>
+<p class="western" style="margin-bottom: 0cm"><b><span style="background: transparent">Referência</span></b></p>
+		<ol>
+			<li/>
+<p class="western" style="margin-bottom: 0cm"><span style="font-weight: normal"><span style="background: transparent">A
+			Practical Introduction to K-Nearest Neighbors Algorithm for
+			Regression (with Python code) -
+			</span></span><font color="#000080"><span lang="zxx"><u><a href="https://www.analyticsvidhya.com/blog/2018/08/k-nearest-neighbor-introduction-regression-python/"><span style="font-weight: normal"><span style="background: transparent">https://www.analyticsvidhya.com/blog/2018/08/k-nearest-neighbor-introduction-regression-python/</span></span></a></u></span></font></p>
+			<li/>
+<p class="western" style="margin-bottom: 0cm"><span style="font-weight: normal"><span style="background: transparent">Machine
+			Learning Basics with the K-Nearest Neighbors Algorithm -
+			</span></span><font color="#000080"><span lang="zxx"><u><a href="https://towardsdatascience.com/machine-learning-basics-with-the-k-nearest-neighbors-algorithm-6a6e71d01761"><span style="font-weight: normal"><span style="background: transparent">https://towardsdatascience.com/machine-learning-basics-with-the-k-nearest-neighbors-algorithm-6a6e71d01761</span></span></a></u></span></font></p>
+			<li/>
+<p class="western" style="margin-bottom: 0cm; font-weight: normal">
+			<span style="background: transparent">A Quick Introduction to
+			K-Nearest Neighbors Algorithm -
+			https://medium.com/@adi.bronshtein/a-quick-introduction-to-k-nearest-neighbors-algorithm-62214cea29c7</span></p>
+		</ol>
+	</ol>
+</ol>
+<p class="western" style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p class="western" style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<h2 class="western">4 Gaussian Naive Bayes (GaussianNB) 
+</h2>
+<ol>
+	<ol>
+		<li/>
+<p class="western" style="margin-bottom: 0cm"><b>Descreva uma
+		situação do mundo real onde este modelo pode ser utilizado. </b>
+		</p>
+		<ol>
+			<li/>
+<p class="western" style="margin-bottom: 0cm">Realizar uma
+			análise quanto sabemos que uma dada informação tem uma
+			determinada probabilidade de ocorrer. Por exemplo, realizar a
+			previsão do tempo; descobrir nas redes sociais quem provavelmente
+			é torcedor do “Chicago Bulls” para oferecer produtos do time.</p>
+		</ol>
+		<li/>
+<p class="western" style="margin-bottom: 0cm"><b>Quais são
+		as vantagens da utilização deste modelo; quando ele performa bem?
+		</b>
+		</p>
+		<ol>
+			<li/>
+<p class="western" style="margin-bottom: 0cm">É fácil e
+			rápido para prever o conjunto de dados da classe de teste. Também
+			tem um bom desempenho na previsão de classes múltiplas.</p>
+			<li/>
+<p class="western" style="margin-bottom: 0cm">Quando a
+			suposição de independência prevalece, um classificador Naive
+			Bayes tem melhor desempenho em comparação com outros modelos
+			como regressão logística, e você precisa de menos dados de
+			treinamento.</p>
+			<li/>
+<p class="western" style="margin-bottom: 0cm">O desempenho é
+			bom em caso de variáveis categóricas de entrada comparada com a
+			variáveis numéricas. Para variáveis numéricas, assume-se a
+			distribuição normal (curva de sino, que é uma suposição
+			forte).</p>
+			<li/>
+<p class="western" style="margin-bottom: 0cm">Usar quando:</p>
+			<ol>
+				<li/>
+<p class="western" style="margin-bottom: 0cm">Se tiver um
+				conjunto de dados grande ou moderado</p>
+				<li/>
+<p class="western" style="margin-bottom: 0cm">Se as
+				instâncias tiverem vários atributos</p>
+				<li/>
+<p class="western" style="margin-bottom: 0cm">Caso haja
+				independência entre os atributos do conjunto de dados.</p>
+			</ol>
+		</ol>
+		<li/>
+<p class="western" style="margin-bottom: 0cm"><b>Quais são
+		as fraquezas do modelo; quando ele performa mal? </b>
+		</p>
+		<ol>
+			<li/>
+<p class="western" style="margin-bottom: 0cm">O modelo pode
+			falhar de forma gritante, pois é usado para analisar dados não
+			numéricos, por exemplo, ao procurar por “Chicago bulls”, pode
+			encontrar muita coisa da cidade Chicago e búfalos, quando na
+			verdade se quer o time de basquete.</p>
+			<li/>
+<p class="western" style="margin-bottom: 0cm">Se a variável
+			categórica tem uma categoria (no conjunto de dados de teste) que
+			não foi observada no conjunto de dados de treinamento, então o
+			modelo irá atribuir uma probabilidade de 0 (zero) e não será
+			capaz de fazer uma previsão. Isso é muitas vezes conhecido como
+			“Zero Frequency”. Para resolver isso, podemos usar a técnica
+			de alisamento. Uma das técnicas mais simples de alisamento é a
+			chamada estimativa de Laplace. 
+			</p>
+			<li/>
+<p class="western" style="margin-bottom: 0cm">A suposição
+			de preditores independentes, na vida real, é quase impossível
+			que ter um conjunto de indicadores que sejam completamente
+			independentes. 
+			</p>
+		</ol>
+		<li/>
+<p class="western" style="margin-bottom: 0cm"><b>O que torna
+		este modelo um bom candidato para o problema, considerando o que
+		você sabe sobre o conjunto de dados? </b>
+		</p>
+		<ol>
+			<li/>
+<p class="western" style="margin-bottom: 0cm">Por não ser
+			um conhecedor profundo dos dados, acredito que este modelo não
+			seja o mais indicado para o problema.</p>
+		</ol>
+		<li/>
+<p class="western" style="margin-bottom: 0cm"><b>Referência</b></p>
+		<ol>
+			<li/>
+<p class="western" style="margin-bottom: 0cm">Naive Bayes
+			Strengths and Weaknesses.<br/>
+
+			https://www.youtube.com/watch?v=nfbKTrufPOs</p>
+			<li/>
+<p class="western" style="margin-bottom: 0cm">6 passos
+			fáceis para aprender o algoritmo Naive Bayes (com o código em
+			Python)<br/>
+<font color="#000080"><span lang="zxx"><u><a href="https://www.vooo.pro/insights/6-passos-faceis-para-aprender-o-algoritmo-naive-bayes-com-o-codigo-em-python/">https://www.vooo.pro/insights/6-passos-faceis-para-aprender-o-algoritmo-naive-bayes-com-o-codigo-em-python/</a></u></span></font></p>
+			<li/>
+<p class="western" style="margin-bottom: 0cm">Machine
+			Learning Algorithms Every Engineer Should Know -
+			https://www.dezyre.com/article/top-10-machine-learning-algorithms/202</p>
+		</ol>
+	</ol>
+</ol>
+<p class="western" style="margin-bottom: 0cm"><br/>
+
+</p>
+<h2 class="western">5<b> </b>Decision Trees (Árvores de decisão) 
+</h2>
+<ol>
+	<ol>
+		<li/>
+<p class="western" style="margin-bottom: 0cm"><b>Descreva uma
+		situação do mundo real onde este modelo pode ser utilizado. </b>
+		</p>
+		<ol>
+			<li/>
+<p class="western" style="margin-bottom: 0cm"><span style="font-weight: normal">Classificar
+			a espécie de um novo espécime dadas suas características, por
+			exemplo, classificar as flores de Íris, dados largura e
+			comprimento da pétala e da sépala da flor. </span>
+			</p>
+		</ol>
+		<li/>
+<p class="western" style="margin-bottom: 0cm"><b>Quais são
+		as vantagens da utilização deste modelo; quando ele performa bem?
+		</b>
+		</p>
+		<ol>
+			<li/>
+<p class="western" style="margin-bottom: 0cm; font-weight: normal">
+			As árvores de decisão constituem uma técnica muito poderosa e
+			amplamente utilizada em  problemas  de  classificação.  Uma  das
+			 razões  para  que  esta  técnica seja  bastante utilizada  é 
+			o  fato  do  conhecimento  adquirido  ser  representado  por meio 
+			de  regras. 
+			</p>
+			<li/>
+<p class="western" style="margin-bottom: 0cm; font-weight: normal">
+			A árvore de decisão é simples de entender e visualizar.</p>
+			<li/>
+<p class="western" style="margin-bottom: 0cm; font-weight: normal">
+			Pode usar dados numéricos ou não.</p>
+			<li/>
+<p class="western" style="margin-bottom: 0cm; font-weight: normal">
+			Se os dados de treinamento não tem certo valores, então a árvore
+			de decisão pode ser usada, pois podem manipular dados ausentes
+			analisando outras colunas.</p>
+		</ol>
+		<li/>
+<p class="western" style="margin-bottom: 0cm"><b>Quais são
+		as fraquezas do modelo; quando ele performa mal? </b>
+		</p>
+		<ol>
+			<li/>
+<p class="western" style="margin-bottom: 0cm"><span style="font-weight: normal">A
+			construção de uma árvore de decisão, chamado de processo de
+			indução, pode ser uma tarefa de alta demanda computacional.</span></p>
+			<li/>
+<p class="western" style="margin-bottom: 0cm"><span style="font-weight: normal">Há
+			muitas maneiras de uma árvore de decisão ser estruturada a
+			partir de um conjunto de  atributos.  De  forma  exaustiva,  o 
+			número  de  árvores  de  decisão  possíveis cresce
+			fatorialmente à medida que o número de atributos aumenta. Logo, 
+			torna-se impraticável  definir  a  estrutura  da árvore  de 
+			decisão  ótima  para  um determinado problema, devido ao elevado
+			custo computacional envolvido nessa busca. </span>
+			</p>
+			<li/>
+<p class="western" style="margin-bottom: 0cm; font-weight: normal">
+			Não trabalham bem se os dados não são correlacionados.</p>
+		</ol>
+		<li/>
+<p class="western" style="margin-bottom: 0cm"><b>O que torna
+		este modelo um bom candidato para o problema, considerando o que
+		você sabe sobre o conjunto de dados? </b>
+		</p>
+		<ol>
+			<li/>
+<p class="western" style="margin-bottom: 0cm; font-weight: normal">
+			Uma vez que tenha identificado os labels mais relevantes pode-se
+			rapidamente montar uma regra para classificar os novos doadores,
+			mas como não conheço bem os dados, acho que esse modelo não é
+			indicado.</p>
+		</ol>
+		<li/>
+<p class="western" style="margin-bottom: 0cm"><b>Referências</b></p>
+		<ol>
+			<li/>
+<p class="western" style="margin-bottom: 0cm"><span style="font-weight: normal">Árvores
+			de Decisão - 
+			<br/>
+</span><font color="#000080"><span lang="zxx"><u><a href="https://medium.com/machine-learning-beyond-deep-learning/%C3%A1rvores-de-decis%C3%A3o-3f52f6420b69"><span style="font-weight: normal">https://medium.com/machine-learning-beyond-deep-learning/%C3%A1rvores-de-decis%C3%A3o-3f52f6420b69</span></a></u></span></font></p>
+			<li/>
+<p class="western" style="margin-bottom: 0cm; font-weight: normal">
+			Árvores de Decisão -
+			ftp://ftp.dca.fee.unicamp.br/pub/docs/vonzuben/ia004_1s10/notas_de_aula/topico7_IA004_1s10.pdf</p>
+		</ol>
+	</ol>
+</ol>
+<p class="western" style="margin-bottom: 0cm"><br/>
+
+</p>
+<p class="western" style="margin-bottom: 0cm"><br/>
+
+</p>
+<h2 class="western">6<b> </b>Ensemble Methods (Bagging, AdaBoost,
+Random Forest, Gradient Boosting) 
+</h2>
+<ol>
+	<ol>
+		<li/>
+<p class="western" style="margin-bottom: 0cm"><b>Descreva uma
+		situação do mundo real onde este modelo pode ser utilizado. </b>
+		</p>
+		<ol>
+			<li/>
+<p class="western" style="margin-bottom: 0cm"><span style="font-weight: normal">Predição
+			de empréstimo bancário</span></p>
+		</ol>
+		<li/>
+<p class="western" style="margin-bottom: 0cm"><b>Quais são
+		as vantagens da utilização deste modelo; quando ele performa bem?
+		</b>
+		</p>
+		<ol>
+			<li/>
+<p class="western" style="margin-bottom: 0cm; font-weight: normal">
+			Ensembling é um método comprovado para melhorar a precisão do
+			modelo e funciona na maioria dos casos.</p>
+			<li/>
+<p class="western" style="margin-bottom: 0cm"><span style="font-weight: normal">Torna
+			o modelo mais robusto e estável, garantindo desempenho decente
+			nos casos de teste na maioria dos cenários.</span></p>
+			<li/>
+<p class="western" style="margin-bottom: 0cm"><span style="font-weight: normal">Pode-se
+			usar para capturar relações complexas lineares e simples, além
+			de não lineares e complexas, nos dados. Isso pode ser feito
+			usando dois modelos diferentes e formando um conjunto de dois.</span></p>
+		</ol>
+		<li/>
+<p class="western" style="margin-bottom: 0cm"><b>Quais são
+		as fraquezas do modelo; quando ele performa mal? </b>
+		</p>
+		<ol>
+			<li/>
+<p class="western" style="margin-bottom: 0cm"><span style="font-weight: normal">Reduz
+			a capacidade de interpretação do modelo e dificulta a elaboração
+			de qualquer visão de negócios crucial no final.</span></p>
+			<li/>
+<p class="western" style="margin-bottom: 0cm; font-weight: normal">
+			É demorado e, portanto, pode não ser a melhor ideia para
+			aplicativos em tempo real.</p>
+			<li/>
+<p class="western" style="margin-bottom: 0cm; font-weight: normal">
+			A seleção de modelos para criar um conjunto é uma arte que é
+			realmente difícil de dominar.</p>
+		</ol>
+		<li/>
+<p class="western" style="margin-bottom: 0cm"><b>O que torna
+		este modelo um bom candidato para o problema, considerando o que
+		você sabe sobre o conjunto de dados? </b>
+		</p>
+		<ol>
+			<li/>
+<p class="western" style="margin-bottom: 0cm; font-weight: normal">
+			Por se aplicável é vários tipos de cenários diferentes,
+			resolveria nosso problema. Contudo, é um modelo complexo para ser
+			aplicado a nosso cenário.</p>
+		</ol>
+		<li/>
+<p class="western" style="margin-bottom: 0cm"><b>Referência</b></p>
+		<ol>
+			<li/>
+<p class="western" style="margin-bottom: 0cm; font-weight: normal">
+			Ensemble methods -
+			https://scikit-learn.org/stable/modules/ensemble.html</p>
+		</ol>
+	</ol>
+</ol>
+<p class="western"><br/>
+<br/>
+
+</p>
+<h2 class="western">7 Stochastic Gradient Descent Classifier (SGDC) 
+</h2>
+<ol>
+	<ol>
+		<li/>
+<p class="western" style="margin-bottom: 0cm"><b>Descreva uma
+		situação do mundo real onde este modelo pode ser utilizado. </b>
+		</p>
+		<ol>
+			<li/>
+<p class="western" style="margin-bottom: 0cm; font-weight: normal">
+			Aplicado a problema com dados em larga escala e esparsos, como em
+			classificação  de texto e linguagem natural.</p>
+		</ol>
+		<li/>
+<p class="western" style="margin-bottom: 0cm"><b>Quais são
+		as vantagens da utilização deste modelo; quando ele performa bem?</b></p>
+		<ol>
+			<li/>
+<p class="western" style="margin-bottom: 0cm; font-weight: normal">
+			Eficiência.</p>
+			<li/>
+<p class="western" style="margin-bottom: 0cm; font-weight: normal">
+			Facilidade de implementação (com muitas oportunidade de ajustes)</p>
+		</ol>
+		<li/>
+<p class="western" style="margin-bottom: 0cm"><b>Quais são
+		as fraquezas do modelo; quando ele performa mal? ]</b></p>
+		<ol>
+			<li/>
+<p class="western" style="margin-bottom: 0cm; font-weight: normal">
+			Requer um número de hyperparâmetros tal qual parâmetros de
+			regulação e de iterações;</p>
+			<li/>
+<p class="western" style="margin-bottom: 0cm; font-weight: normal">
+			É sensível a escalabilidade.</p>
+		</ol>
+		<li/>
+<p class="western" style="margin-bottom: 0cm"><b>O que torna
+		este modelo um bom candidato para o problema, considerando o que
+		você sabe sobre o conjunto de dados? </b>
+		</p>
+		<ol>
+			<li/>
+<p class="western" style="margin-bottom: 0cm"><span style="font-weight: normal">Por
+			ser um modelo para ser aplicado a grande volume e dados esparsos,
+			</span><b>não</b><span style="font-weight: normal"> acho que seja
+			um bom modelo para nosso cenário.</span></p>
+		</ol>
+		<li/>
+<p class="western" style="margin-bottom: 0cm"><b>Referência</b></p>
+		<ol>
+			<li/>
+<p class="western" style="margin-bottom: 0cm; font-weight: normal">
+			Stochastic Gradient Descent -
+			https://scikit-learn.org/stable/modules/sgd.html</p>
+		</ol>
+	</ol>
+</ol>
+<p class="western" style="margin-bottom: 0cm"><br/>
+
+</p>
+<h2 class="western">8</h2>
+<p class="western" style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p class="western" style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+</body>
+</html>
